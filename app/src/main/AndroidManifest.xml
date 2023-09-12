@@ -12,6 +12,9 @@
         android:theme="@style/Theme.HealthkatonReminder"
         tools:targetApi="31">
         <activity
+            android:name=".autentikasi.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".uipasien.JadwalActivity"
             android:exported="false" />
         <activity
