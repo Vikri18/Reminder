@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:background="@drawable/white_background"
+    android:elevation="3dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/waktu_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:text="07:00"
+        android:textColor="#199B33"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nama_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Intunal | "
+        android:textColor="#199B33"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/waktu_obat"
+        app:layout_constraintTop_toTopOf="@+id/waktu_obat" />
+
+    <TextView
+        android:id="@+id/keterangan_sakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="flu, batuk, demam"
+        android:textColor="#199B33"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/nama_obat"
+        app:layout_constraintTop_toTopOf="@+id/nama_obat" />
+
+    <TextView
+        android:id="@+id/keterangan_minum_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Sesudah Makan | "
+        android:textColor="#199B33"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waktu_obat" />
+
+    <TextView
+        android:id="@+id/keterangan_jumlah_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Tablet"
+        android:textColor="#199B33"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/keterangan_minum_obat"
+        app:layout_constraintTop_toTopOf="@+id/keterangan_minum_obat" />
+
+    <TextView
+        android:id="@+id/keterangan_waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Alarm dalam 1 jam 20 menit"
+        android:textColor="#199B33"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keterangan_minum_obat" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/icon_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

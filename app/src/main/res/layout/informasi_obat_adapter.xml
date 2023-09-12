@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:background="@drawable/white_background"
+    android:elevation="3dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/judul_nama_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Nama Obat :"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nama_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Intunal"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_nama_obat" />
+
+    <TextView
+        android:id="@+id/judul_informasi_kegunaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Informasi Kegunaan Obat : "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_obat" />
+
+    <TextView
+        android:id="@+id/informasi_kegunaan_obat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingEnd="5dp"
+        android:text="INTUNAL F TABLET merupakan obat yang mengandung Pracetamol yang bekerja membantu menurunkan demam dan pereda nyeri. ."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_informasi_kegunaan" />
+
+    <TextView
+        android:id="@+id/judul_indikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:paddingEnd="5dp"
+        android:text="Indikasi Umum : "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informasi_kegunaan_obat" />
+    <TextView
+        android:id="@+id/indikasi_umum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingEnd="5dp"
+        android:text="Gejala-gejala flu seperti: demam, pusing, bersin-bersin, hidung tersumbat, yang disertai batuk berdahak."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_indikasi" />
+
+    <TextView
+        android:id="@+id/judul_aturan_pakai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Aturan Pakai dan Cara Pakai Obat : "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indikasi_umum" />
+
+    <TextView
+        android:id="@+id/aturan_pakai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="3 kali sehari 1 tablet | Sesudah Makan"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_aturan_pakai" />
+
+    <TextView
+        android:id="@+id/judul_efek_samping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Efek Samping Obat : "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aturan_pakai" />
+
+    <TextView
+        android:id="@+id/efek_samping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:paddingRight="5dp"
+        android:text="Gangguan GI, mengantuk, pusing, mulut kering, sulit berkemih, berkeringat, menurunkan nafsu makan, serangan seperti epilepsi (dosis tinggi)."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_efek_samping" />
+
+    <TextView
+        android:id="@+id/judul_kontraindikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Kontraindikasi Obat : "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/efek_samping" />
+
+    <TextView
+        android:id="@+id/kontraindikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Hipersensitif, hipertiroid, hipertensi, penyakit jantung, terapi MAOI, nefropati "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_kontraindikasi" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
