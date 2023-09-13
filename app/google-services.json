@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "226274301462",
+    "project_id": "reminder-8adc7",
+    "storage_bucket": "reminder-8adc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226274301462:android:d059360c348111f1af4737",
+        "android_client_info": {
+          "package_name": "com.thisvyx.healthkatonreminder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcvsOUe8hSgUFTh5PeFJWiz0aLkNVI0fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

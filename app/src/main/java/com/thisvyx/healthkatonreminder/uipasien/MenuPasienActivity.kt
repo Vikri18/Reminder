@@ -5,9 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.thisvyx.healthkatonreminder.R
+import com.thisvyx.healthkatonreminder.adapter.JadwalAdapter
 
 class MenuPasienActivity : AppCompatActivity() {
+
+    lateinit var jadwalAdapter: JadwalAdapter
+    private lateinit var listJadwal: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_pasien)
@@ -31,6 +37,20 @@ class MenuPasienActivity : AppCompatActivity() {
         val btnJadwalMinumObat = findViewById<LinearLayout>(R.id.ln_jadwal_minum_obat)
         btnJadwalMinumObat.setOnClickListener {
             startActivity(Intent(this, JadwalActivity::class.java))
+        }
+
+        jadwalAdapter = JadwalAdapter()
+        listJadwal = findViewById(R.id.list_jadwal)
+        setupRecyclerView()
+    }
+
+
+    private fun setupRecyclerView() {
+
+
+        listJadwal.apply {
+            layoutManager = LinearLayoutManager(applicationContext)
+            adapter = jadwalAdapter
         }
     }
 }

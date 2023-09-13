@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:text="Tanggal"
         android:textSize="16sp"
+        android:textColor="#199B33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Sakit Diderita :"
+        android:textColor="#199B33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nama_apoteker" />
 
@@ -65,6 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Obat Diberikan : "
+        android:textColor="#199B33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nama_penyakit" />
 
@@ -84,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Vitamin Diberikan :"
+        android:textColor="#199B33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nama_obat" />
 
@@ -103,6 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Nama Apoteker : "
+        android:textColor="#199B33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tgl_pengobatan" />
 
