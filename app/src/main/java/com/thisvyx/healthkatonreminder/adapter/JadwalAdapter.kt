@@ -32,7 +32,7 @@ class JadwalAdapter (): RecyclerView.Adapter<JadwalAdapter.JadwalViewHolder>() {
         holder.waktuObat.text = "07:00"
         holder.namaObat.text = "Intunal | "
         holder.keteranganSakit.text = "flu | batuk | demam"
-        holder.aturanPakai.text = "1 Tablet | Sesudah Makan"
+        holder.aturanPakai.text = "1 Tablet 3 kali sehari | Sesudah Makan"
         holder.countDown.text = "Alarm Dalam 1 Jam 20 menit"
 
     }

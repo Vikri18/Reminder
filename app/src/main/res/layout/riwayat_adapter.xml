@@ -42,74 +42,74 @@
         app:layout_constraintTop_toBottomOf="@+id/tanggal" />
 
     <TextView
-        android:id="@+id/ket"
+        android:id="@+id/judul_keluhan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Sakit Diderita :"
-        android:textColor="#199B33"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nama_apoteker" />
-
-    <TextView
-        android:id="@+id/nama_penyakit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:text="Lambung | Demam | Flu | Batuk"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ket" />
-
-    <TextView
-        android:id="@+id/ket_obat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Obat Diberikan : "
-        android:textColor="#199B33"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nama_penyakit" />
-
-    <TextView
-        android:id="@+id/nama_obat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:text="Intunal | Omeprazole"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ket_obat" />
-
-    <TextView
-        android:id="@+id/vitamin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Vitamin Diberikan :"
-        android:textColor="#199B33"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nama_obat" />
-
-    <TextView
-        android:id="@+id/nama_vitamin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:text="Intunal | Omeprazole"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vitamin" />
-
-    <TextView
-        android:id="@+id/nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Nama Apoteker : "
+        android:text="Keluhan :"
         android:textColor="#199B33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tgl_pengobatan" />
+
+    <TextView
+        android:id="@+id/keluhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Panas | Flu | Batuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_keluhan" />
+
+    <TextView
+        android:id="@+id/judul_diagnosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Diagnosa"
+        android:textColor="#199B33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keluhan" />
+
+    <TextView
+        android:id="@+id/diagnosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Demam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_diagnosa" />
+
+    <TextView
+        android:id="@+id/judul_tindakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tindakan :"
+        android:textColor="#199B33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagnosa" />
+
+    <TextView
+        android:id="@+id/tindakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_tindakan" />
+
+    <TextView
+        android:id="@+id/penanggung_jawab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Penanggung Jawab : "
+        android:textColor="#199B33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tindakan" />
 
     <TextView
         android:id="@+id/nama_apoteker"
@@ -119,7 +119,7 @@
         android:layout_marginStart="10dp"
         android:text="Susanti Aprlilia putri"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nama" />
+        app:layout_constraintTop_toBottomOf="@+id/penanggung_jawab" />
 
 
 

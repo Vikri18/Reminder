@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".uiapoteker.ApotekerFormRiwayatActivity">
+
+
+    <EditText
+        android:id="@+id/no_bpjs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="No BPJS"
+        android:minLines="1"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        />
+
+    <EditText
+        android:id="@+id/keluhan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Keluhan"
+        android:minLines="3"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_bpjs"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        />
+    <EditText
+        android:id="@+id/laporan_diagnosa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Diagnosa"
+        android:minLines="3"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keluhan"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        />
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tindakan"
+        android:minLines="3"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laporan_diagnosa"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        />
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#199B33" />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_save"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#199B33"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

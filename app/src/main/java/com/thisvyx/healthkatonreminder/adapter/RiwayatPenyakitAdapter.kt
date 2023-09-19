@@ -11,10 +11,11 @@ import org.w3c.dom.Text
 class RiwayatPenyakitAdapter (): RecyclerView.Adapter<RiwayatPenyakitAdapter.RiwayatPenyakitViewHolder>(){
     class RiwayatPenyakitViewHolder (view: View): RecyclerView.ViewHolder(view){
         val tanggal: TextView = view.findViewById(R.id.tgl_pengobatan)
+        val keluhan: TextView = view.findViewById(R.id.keluhan)
+        val diagnosa: TextView = view.findViewById(R.id.diagnosa)
+        val tindakan: TextView = view.findViewById(R.id.tindakan)
         val namaApoteker: TextView = view.findViewById(R.id.nama_apoteker)
-        val sakit: TextView = view.findViewById(R.id.nama_penyakit)
-        val namaObat: TextView = view.findViewById(R.id.nama_obat)
-        val namaVitamin: TextView = view.findViewById(R.id.nama_vitamin)
+
 
 
     }
@@ -30,8 +31,8 @@ class RiwayatPenyakitAdapter (): RecyclerView.Adapter<RiwayatPenyakitAdapter.Riw
     override fun onBindViewHolder(holder: RiwayatPenyakitViewHolder, position: Int) {
         holder.tanggal.text = "01/05/2023"
         holder.namaApoteker.text= "Susanti Aprlilia Putri"
-        holder.sakit.text = "Lambung | Demam | Flu | Batuk"
-        holder.namaObat.text = "Intunal | Omeprazole"
-        holder.namaVitamin.text = "Caviplex"
+        holder.keluhan.text = "Panas | Flu | Batuk"
+        holder.diagnosa.text = "Demam | Flu | Batuk"
+        holder.tindakan.text = "-"
     }
 }

@@ -1,16 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#199B33"
     tools:context=".uiapoteker.MenuApotekerActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Hai, "
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nama_apoteker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elsa Nur Rahmadiani"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="52dp"
+            android:src="@drawable/man_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
+        android:layout_below="@+id/layout1"
+        android:id="@+id/dashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="menu apoteker"/>
-
+        android:text="Dashboard Apoteker"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="270dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MenuObat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:layout_column="0"
+            app:cardElevation="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/pic2med"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Obat"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#199B33" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MenuRiwayatKesehatan"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardCornerRadius="15dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:layout_column="1"
+            app:cardElevation="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/pic3data"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Riwayat Kesehatan dan Jadwal"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#199B33" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
 </RelativeLayout>

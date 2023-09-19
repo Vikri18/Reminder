@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,27 +14,60 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthkatonReminder"
+        android:screenOrientation="sensorPortrait"
         tools:targetApi="31">
         <activity
+            android:name=".uiapoteker.RiwayatdanJadwalApotekerActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".uiapoteker.ApotekerObatActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".uiapoteker.ApotekerFormRiwayatActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".uiapoteker.ApotekerEditObatActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <receiver
+            android:name=".Notification"
+            android:screenOrientation="portrait"
+            android:enabled="true" />
+
+        <activity
+            android:name=".uiapoteker.InputJadwalActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
             android:name=".autentikasi.LoginActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".uipasien.JadwalActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".uipasien.RiwayatPenyakitActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".uipasien.InformasiObatActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".uipasien.MenuPasienActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".uiapoteker.MenuApotekerActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +75,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".Notification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
